@@ -1,5 +1,7 @@
 <script>
+  import Footer from "../lib/components/footer.svelte";
   import Navbar from "../lib/components/navbar.svelte";
+  import Pagebreak from "../lib/components/pagebreak.svelte";
   import "../tailwind.css";
 </script>
 
@@ -8,6 +10,9 @@
 >
   <div class="w-full md:w-2/3 h-full pb-10 px-7">
     <Navbar />
+    <Pagebreak />
     <slot />
+    <Pagebreak />
+    <Footer />
   </div>
 </main>
