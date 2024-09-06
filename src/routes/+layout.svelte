@@ -1,8 +1,13 @@
 <script>
-  import '../tailwind.css'
+  import Navbar from "../lib/components/navbar.svelte";
+  import "../tailwind.css";
 </script>
 
-<main>
-  <p class="font-bold underline text-3xl">Some Website :b </p>
-  <slot />
+<main
+  class="overflow-x-hidden max-w-screen flex flex-col items-center font-serif justify-center"
+>
+  <div class="w-full md:w-2/3 h-full pb-10 px-7">
+    <Navbar />
+    <slot />
+  </div>
 </main>

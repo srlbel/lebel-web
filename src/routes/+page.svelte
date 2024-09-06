@@ -1,2 +1,17 @@
-<h1>Welcome to SvelteKit</h1>
-<p>Visit <a href="https://kit.svelte.dev">kit.svelte.dev</a> to read the documentation</p>
+<svelte:head>
+  <title>lbel's cave</title>
+</svelte:head>
+
+<main class="flex flex-col space-y-3 text-lg">
+  <h1 class="text-2xl">Personal Website of Juan Simancas</h1>
+  <p>
+    Student of Systems Engineering. Currently I'm looking to properly learn
+    systems management, web development and game development. I want to focus in
+    maths and overall linux knownlegde.
+  </p>
+
+  <p>
+    I will use this website to share insights, opinions and also use it as my
+    portfolio.
+  </p>
+</main>
