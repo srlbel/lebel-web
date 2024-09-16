@@ -21,6 +21,10 @@ export default {
           light: "#df8e1d",
           dark: "#f9e2af",
         },
+        surface: {
+          light: "#ccd0da",
+          dark: "#313244",
+        },
       },
     },
   },

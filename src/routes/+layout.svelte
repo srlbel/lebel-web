@@ -5,8 +5,12 @@
   import "../tailwind.css";
 </script>
 
+<svelte:head>
+  <title>lbel's cave</title>
+</svelte:head>
+
 <main
-  class="overflow-x-hidden max-w-screen flex flex-col items-center font-serif min-h-screen text-text-light bg-base-light dark:bg-base-dark dark:text-text-dark"
+  class="overflow-x-hidden text-lg max-w-screen flex flex-col items-center font-serif min-h-screen text-text-light bg-base-light dark:bg-base-dark dark:text-text-dark"
 >
   <div class="w-full md:w-2/3 h-full pb-10 px-7">
     <Navbar />
