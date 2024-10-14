@@ -1,4 +1,3 @@
 - Add Meta Tags
 - Make a mini blog at /misc
 - Make a portfolio at /me
-- Change favicon
