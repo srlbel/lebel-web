@@ -4,6 +4,9 @@ export default {
   content: ["./src/**/*.{html,js,svelte,ts}"],
   theme: {
     extend: {
+      fontFamily: {
+        "eb-garamond": ['"EB Garamond"', "serif"],
+      },
       colors: {
         base: {
           light: "#eff1f5",
