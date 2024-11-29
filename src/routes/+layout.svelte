@@ -10,7 +10,7 @@
 </svelte:head>
 
 <main
-  class="overflow-x-hidden text-lg max-w-screen flex flex-col items-center min-h-screen text-text-light bg-base-light dark:bg-base-dark dark:text-text-dark font-eb-garamond"
+  class="overflow-x-hidden text-lg max-w-screen flex flex-col items-center min-h-screen text-text-light bg-base-light dark:bg-base-dark dark:text-text-dark font-satoshi"
 >
   <div class="w-full md:w-2/3 h-full pb-10 px-7">
     <Navbar />

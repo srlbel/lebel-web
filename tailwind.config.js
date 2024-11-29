@@ -5,7 +5,7 @@ export default {
   theme: {
     extend: {
       fontFamily: {
-        "eb-garamond": ['"EB Garamond"', "serif"],
+        "satoshi": ['Satoshi', "sans-serif"], 
       },
       colors: {
         base: {
