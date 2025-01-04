@@ -1,5 +1,5 @@
 <main class="flex flex-col space-y-3 p-10">
-  <h1 class="text-2xl">Personal Website of Juan Simancas</h1>
+  <h1 class="text-2xl font-semibold">Personal Website of Juan Simancas</h1>
   <p>
     Student of Systems Engineering. Currently I'm looking to properly learn
     systems management, web development and game development. I want to focus in
