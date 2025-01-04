@@ -9,8 +9,8 @@
       >home</a
     >
     <p>•</p>
-    <a href="/misc" class="hover:text-accent-light dark:hover:text-accent-dark"
-      >misc</a
+    <a href="/blog" class="hover:text-accent-light dark:hover:text-accent-dark"
+      >blog</a
     >
     <p>•</p>
     <a href="/me" class="hover:text-accent-light dark:hover:text-accent-dark"
