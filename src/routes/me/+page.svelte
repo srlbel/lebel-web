@@ -1,13 +1,4 @@
 <script>
-  import {
-    Code,
-    Database,
-    SquareTerminal,
-    Github,
-    GitCommitHorizontal,
-    Braces,
-    PanelTop,
-  } from "lucide-svelte";
   import Skillcard from "../../lib/components/skillcard.svelte";
 </script>
 
@@ -27,37 +18,37 @@
 
     <h2 class="text-xl font-semibold pt-2">Frontend</h2>
     <div class="flex flex-row flex-wrap my-2 gap-1">
-      <Skillcard name="Svelte"><PanelTop /></Skillcard>
-      <Skillcard name="React"><PanelTop /></Skillcard>
-      <Skillcard name="NextJs"><PanelTop /></Skillcard>
-      <Skillcard name="TailwindCSS"><Code /></Skillcard>
-      <Skillcard name="CSS"><Code /></Skillcard>
-      <Skillcard name="HTML"><Code /></Skillcard>
+      <Skillcard name="Svelte"><img src="https://skillicons.dev/icons?i=svelte"></Skillcard>
+      <Skillcard name="React"><img src="https://skillicons.dev/icons?i=react"></Skillcard>
+      <Skillcard name="NextJs"><img src="https://skillicons.dev/icons?i=nextjs"></Skillcard>
+      <Skillcard name="TailwindCSS"><img src="https://skillicons.dev/icons?i=tailwind"></Skillcard>
+      <Skillcard name="CSS"><img src="https://skillicons.dev/icons?i=css"></Skillcard>
+      <Skillcard name="HTML"><img src="https://skillicons.dev/icons?i=html"></Skillcard>
     </div>
 
     <h2 class="text-xl font-semibold pt-2">Backend</h2>
     <div class="flex flex-row flex-wrap my-2 gap-1">
-      <Skillcard name="MongoDB"><Database /></Skillcard>
-      <Skillcard name="MySQL"><Database /></Skillcard>
-      <Skillcard name="PostgreSQL"><Database /></Skillcard>
-      <Skillcard name="ExpressJs"><Braces /></Skillcard>
-      <Skillcard name="ElysiaJs"><Braces /></Skillcard>
+      <Skillcard name="MongoDB"><img src="https://skillicons.dev/icons?i=mongodb"></Skillcard>
+      <Skillcard name="MySQL"><img src="https://skillicons.dev/icons?i=mysql"></Skillcard>
+      <Skillcard name="PostgreSQL"><img src="https://skillicons.dev/icons?i=postgres"></Skillcard>
+      <Skillcard name="ExpressJs"><img src="https://skillicons.dev/icons?i=expressjs"></Skillcard>
+      <Skillcard name="ElysiaJs"><img src="https://skillicons.dev/icons?i=elysia"></Skillcard>
     </div>
 
     <h2 class="text-xl font-semibold pt-2">Languages</h2>
     <div class="flex flex-row flex-wrap my-2 gap-1">
-      <Skillcard name="TypeScript"><Braces /></Skillcard>
-      <Skillcard name="JavaScript"><Braces /></Skillcard>
-      <Skillcard name="Rust"><Braces /></Skillcard>
-      <Skillcard name="Python"><Braces /></Skillcard>
-      <Skillcard name="PHP"><Braces /></Skillcard>
+      <Skillcard name="TypeScript"><img src="https://skillicons.dev/icons?i=typescript"></Skillcard>
+      <Skillcard name="JavaScript"><img src="https://skillicons.dev/icons?i=javascript"></Skillcard>
+      <Skillcard name="Rust"><img src="https://skillicons.dev/icons?i=rust"></Skillcard>
+      <Skillcard name="Python"><img src="https://skillicons.dev/icons?i=python"></Skillcard>
+      <Skillcard name="PHP"><img src="https://skillicons.dev/icons?i=php"></Skillcard>
     </div>
 
     <h2 class="text-xl font-semibold pt-2">Tools</h2>
     <div class="flex flex-row flex-wrap my-2 gap-1">
-      <Skillcard name="Linux"><SquareTerminal /></Skillcard>
-      <Skillcard name="Git"><GitCommitHorizontal /></Skillcard>
-      <Skillcard name="GitHub"><Github /></Skillcard>
+      <Skillcard name="Linux"><img src="https://skillicons.dev/icons?i=linux"></Skillcard>
+      <Skillcard name="Git"><img src="https://skillicons.dev/icons?i=git"></Skillcard>
+      <Skillcard name="GitHub"><img src="https://skillicons.dev/icons?i=github"></Skillcard>
     </div>
   </div>
 </div>
