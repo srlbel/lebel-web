@@ -18,37 +18,44 @@
 
     <h2 class="text-xl font-semibold pt-2">Frontend</h2>
     <div class="flex flex-row flex-wrap my-2 gap-1">
-      <Skillcard name="Svelte"><img src="https://skillicons.dev/icons?i=svelte"></Skillcard>
-      <Skillcard name="React"><img src="https://skillicons.dev/icons?i=react"></Skillcard>
-      <Skillcard name="NextJs"><img src="https://skillicons.dev/icons?i=nextjs"></Skillcard>
-      <Skillcard name="TailwindCSS"><img src="https://skillicons.dev/icons?i=tailwind"></Skillcard>
-      <Skillcard name="CSS"><img src="https://skillicons.dev/icons?i=css"></Skillcard>
-      <Skillcard name="HTML"><img src="https://skillicons.dev/icons?i=html"></Skillcard>
+      <Skillcard name="Svelte"><img src="https://skillicons.dev/icons?i=svelte" alt="Svelte Logo"></Skillcard>
+      <Skillcard name="React"><img src="https://skillicons.dev/icons?i=react" alt="React Logo"></Skillcard>
+      <Skillcard name="NextJs"><img src="https://skillicons.dev/icons?i=nextjs" alt="NextJs Logo" ></Skillcard>
+      <Skillcard name="Bootstrap"><img src="https://skillicons.dev/icons?i=bootstrap" alt="Bootstrap Logo"></Skillcard>
+      <Skillcard name="TailwindCSS"><img src="https://skillicons.dev/icons?i=tailwind" alt="TailwindCSS Logo"></Skillcard>
+      <Skillcard name="CSS"><img src="https://skillicons.dev/icons?i=css" alt=" CSS Logo"></Skillcard>
+      <Skillcard name="HTML"><img src="https://skillicons.dev/icons?i=html" alt="HTML Logo"></Skillcard>
     </div>
 
     <h2 class="text-xl font-semibold pt-2">Backend</h2>
     <div class="flex flex-row flex-wrap my-2 gap-1">
-      <Skillcard name="MongoDB"><img src="https://skillicons.dev/icons?i=mongodb"></Skillcard>
-      <Skillcard name="MySQL"><img src="https://skillicons.dev/icons?i=mysql"></Skillcard>
-      <Skillcard name="PostgreSQL"><img src="https://skillicons.dev/icons?i=postgres"></Skillcard>
-      <Skillcard name="ExpressJs"><img src="https://skillicons.dev/icons?i=expressjs"></Skillcard>
-      <Skillcard name="ElysiaJs"><img src="https://skillicons.dev/icons?i=elysia"></Skillcard>
+      <Skillcard name="MongoDB"><img src="https://skillicons.dev/icons?i=mongodb" alt="MongoDB Logo"></Skillcard>
+      <Skillcard name="MySQL"><img src="https://skillicons.dev/icons?i=mysql" alt="MySQL Logo"></Skillcard>
+      <Skillcard name="PostgreSQL"><img src="https://skillicons.dev/icons?i=postgres" alt="Postgres Logo"></Skillcard>
+      <Skillcard name="ExpressJs"><img src="https://skillicons.dev/icons?i=expressjs" alt="ExpressJs Logo"></Skillcard>
+      <Skillcard name="ElysiaJs"><img src="https://skillicons.dev/icons?i=elysia" alt="ElysiaJs Logo"></Skillcard>
+      <Skillcard name="Bun"><img src="https://skillicons.dev/icons?i=bun" alt="Bun Logo"></Skillcard>
+      <Skillcard name="NodeJs"><img src="https://skillicons.dev/icons?i=nodejs" alt="NodeJs Logo"></Skillcard>
+      <Skillcard name="Go"><img src="https://skillicons.dev/icons?i=go" alt="Go Logo"></Skillcard>
     </div>
 
     <h2 class="text-xl font-semibold pt-2">Languages</h2>
     <div class="flex flex-row flex-wrap my-2 gap-1">
-      <Skillcard name="TypeScript"><img src="https://skillicons.dev/icons?i=typescript"></Skillcard>
-      <Skillcard name="JavaScript"><img src="https://skillicons.dev/icons?i=javascript"></Skillcard>
-      <Skillcard name="Rust"><img src="https://skillicons.dev/icons?i=rust"></Skillcard>
-      <Skillcard name="Python"><img src="https://skillicons.dev/icons?i=python"></Skillcard>
-      <Skillcard name="PHP"><img src="https://skillicons.dev/icons?i=php"></Skillcard>
+      <Skillcard name="TypeScript"><img src="https://skillicons.dev/icons?i=typescript" alt="TypeScript Logo"></Skillcard>
+      <Skillcard name="JavaScript"><img src="https://skillicons.dev/icons?i=javascript" alt="JavaScript Logo"></Skillcard>
+      <Skillcard name="Rust"><img src="https://skillicons.dev/icons?i=rust" alt="Rust Logo"></Skillcard>
+      <Skillcard name="Python"><img src="https://skillicons.dev/icons?i=python" alt="Python Logo"></Skillcard>
+      <Skillcard name="PHP"><img src="https://skillicons.dev/icons?i=php" alt="php Logo"></Skillcard>
+      <Skillcard name="MarkDown"><img src="https://skillicons.dev/icons?i=md" alt="markdown Logo"></Skillcard>
     </div>
 
     <h2 class="text-xl font-semibold pt-2">Tools</h2>
     <div class="flex flex-row flex-wrap my-2 gap-1">
-      <Skillcard name="Linux"><img src="https://skillicons.dev/icons?i=linux"></Skillcard>
-      <Skillcard name="Git"><img src="https://skillicons.dev/icons?i=git"></Skillcard>
-      <Skillcard name="GitHub"><img src="https://skillicons.dev/icons?i=github"></Skillcard>
+      <Skillcard name="Linux"><img src="https://skillicons.dev/icons?i=linux" alt="Linux Logo"></Skillcard>
+      <Skillcard name="Bash"><img src="https://skillicons.dev/icons?i=bash" alt="Bash Logo"></Skillcard>
+      <Skillcard name="Git"><img src="https://skillicons.dev/icons?i=git" alt="Git Logo"></Skillcard>
+      <Skillcard name="GitHub"><img src="https://skillicons.dev/icons?i=github" alt="GitHub Logo"></Skillcard>
+      <Skillcard name="NPM"><img src="https://skillicons.dev/icons?i=npm" alt="npm Logo"></Skillcard>
     </div>
   </div>
 </div>
