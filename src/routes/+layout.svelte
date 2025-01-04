@@ -1,4 +1,5 @@
 <script>
+  export const prerender = true;
   import Footer from "../lib/components/footer.svelte";
   import Navbar from "../lib/components/navbar.svelte";
   import Pagebreak from "../lib/components/pagebreak.svelte";
