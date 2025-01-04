@@ -8,19 +8,29 @@
     darkMode = !darkMode;
     localStorage.setItem("theme", darkMode ? "dark" : "light");
 
-    darkMode
-      ? document.documentElement.classList.add("dark")
-      : document.documentElement.classList.remove("dark");
+    const blogContent = document.getElementById("blog-content");
+
+    if (darkMode) {
+      blogContent?.classList.add("prose-dark");
+      document.documentElement.classList.add("dark");
+    } else {
+      blogContent?.classList.remove("prose-dark");
+      document.documentElement.classList.remove("dark");
+    }
   };
+
   if (browser) {
+    const blogContent = document.getElementById("blog-content");
     if (
       localStorage.theme === "dark" ||
       (!("theme" in localStorage) &&
         window.matchMedia("(prefers-color-scheme: dark)").matches)
     ) {
+      blogContent?.classList.add("prose-dark");
       document.documentElement.classList.add("dark");
       darkMode = true;
     } else {
+      blogContent?.classList.remove("prose-dark");
       document.documentElement.classList.remove("dark");
       darkMode = false;
     }
@@ -29,12 +39,12 @@
 
 <div>
   {#if darkMode}
-    <div on:click={handleDarkMode}>
+    <button on:click={handleDarkMode}>
       <Moon class="w-5 h-5" />
-    </div>
+    </button>
   {:else}
-    <div on:click={handleDarkMode}>
+    <button on:click={handleDarkMode}>
       <Sun class="w-5 h-5" />
-    </div>
+    </button>
   {/if}
 </div>
