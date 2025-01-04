@@ -36,13 +36,13 @@
       <Skillcard name="ElysiaJs"><img src="https://skillicons.dev/icons?i=elysia" alt="ElysiaJs Logo"></Skillcard>
       <Skillcard name="Bun"><img src="https://skillicons.dev/icons?i=bun" alt="Bun Logo"></Skillcard>
       <Skillcard name="NodeJs"><img src="https://skillicons.dev/icons?i=nodejs" alt="NodeJs Logo"></Skillcard>
-      <Skillcard name="Go"><img src="https://skillicons.dev/icons?i=go" alt="Go Logo"></Skillcard>
     </div>
 
     <h2 class="text-xl font-semibold pt-2">Languages</h2>
     <div class="flex flex-row flex-wrap my-2 gap-1">
       <Skillcard name="TypeScript"><img src="https://skillicons.dev/icons?i=typescript" alt="TypeScript Logo"></Skillcard>
       <Skillcard name="JavaScript"><img src="https://skillicons.dev/icons?i=javascript" alt="JavaScript Logo"></Skillcard>
+      <Skillcard name="Go"><img src="https://skillicons.dev/icons?i=go" alt="Go Logo"></Skillcard>
       <Skillcard name="Rust"><img src="https://skillicons.dev/icons?i=rust" alt="Rust Logo"></Skillcard>
       <Skillcard name="Python"><img src="https://skillicons.dev/icons?i=python" alt="Python Logo"></Skillcard>
       <Skillcard name="PHP"><img src="https://skillicons.dev/icons?i=php" alt="php Logo"></Skillcard>
