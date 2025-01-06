@@ -35,4 +35,4 @@ According to the Ghostty documentation, for a system wide installation the follo
 zig build -p /usr -Doptimize=ReleaseFast
 ```
 
-and then you must be able to launch Ghostty from your program runner.
+and then you must be able to launch Ghostty from your preferred program runner.
