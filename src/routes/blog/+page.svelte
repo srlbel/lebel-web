@@ -1,20 +1,21 @@
 <script>
   export let data;
+  import Bloglist from "../../lib/components/Bloglist.svelte";
 </script>
 
 <main class="flex flex-col space-y-3 p-10">
   <h1 class="text-2xl font-semibold">Blog list</h1>
 
-  <ul>
+  <div class="flex flex-col space-y-3">
     {#each data.posts as post}
-      <li>
-        <h2>
-          <a href={post.path}>
-            {post.meta.title}
-          </a>
-        </h2>
-        Published {post.meta.date}
-      </li>
+      <Bloglist
+        blogData={{
+          title: post.meta.title,
+          description: post.meta.description,
+          date: post.meta.date,
+          path: post.path,
+        }}
+      />
     {/each}
-  </ul>
+  </div>
 </main>
