@@ -4,7 +4,7 @@
 </script>
 
 <main class="flex flex-col space-y-3 p-10">
-  <h1 class="text-2xl font-semibold">Blog list</h1>
+  <h1 class="text-2xl font-semibold">My Blog List</h1>
 
   <div class="flex flex-col space-y-3">
     {#each data.posts as post}
