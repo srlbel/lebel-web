@@ -8,7 +8,7 @@ published: true
 
 # Notes
 
-By the time I made wrote this, [ghostty](https://ghostty.org/) haven't announced a way to compile Ghostty in Void Linux and the [Void Packages](https://github.com/void-linux/void-packages) maintainers. So, there's probably a better way to install Ghostty using **xbps**.
+By the time I made wrote this, [ghostty](https://ghostty.org/) haven't announced a way to compile Ghostty in Void Linux and neither is available in the [Void Packages](https://github.com/void-linux/void-packages) repo. So, there's probably a better way to install Ghostty using **xbps** by the time I publish this.
 
 # Prerequisites
 In order to compile you need the following packages:
@@ -19,7 +19,7 @@ In order to compile you need the following packages:
 - pkg-config
 - git
 
-**gtk4-devel**, **libadwaita-devel** and **zig** are required for building ghostty for it's UI. **pkg-config** is mostly required to link the files from the dependencies to build the codebase. 
+**gtk4-devel**, **libadwaita-devel** and **zig** are required for building ghostty's UI. **pkg-config** is mostly required to link the files from the dependencies to build the codebase. 
 
 # Process
 
