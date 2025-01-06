@@ -1,6 +1,7 @@
 const light = {
   base: '#eff1f5',
   text: '#4c4f69',
+  text2: '#6c6f85',
   crust: '#dce0e8',
   accent: '#df8e1d',
   surface: '#ccd0da',
@@ -10,6 +11,7 @@ const light = {
 const dark = {
   base: '#1e1e2e',
   text: '#cdd6f4',
+  text2: '#a6adc8',
   crust: '#11111b',
   accent: '#f9e2af',
   surface: '#313244',
@@ -55,6 +57,7 @@ export default {
             fontFamily: {
               "satoshi": ['Satoshi', "sans-serif"],
             },
+            lineHeight: '1.8',
             color: light.text,
             a: {
               color: light.link,
@@ -71,18 +74,26 @@ export default {
               color: light.text,
               fontWeight: '600',
             },
+            h3: {
+              color: light.text,
+              fontWeight: '500'
+            },
+            h4: {
+              color: light.text,
+              fontWeight: '500'
+            },
             blockquote: {
               fontStyle: 'italic',
               borderLeftWidth: '4px',
-              borderColor: '#ccc',
+              borderColor: light.crust,
               paddingLeft: '1rem',
-              color: '#555',
+              color: light.text2,
             },
             code: {
-              backgroundColor: '#f5f5f5',
+              backgroundColor: light.surface,
               padding: '0.2rem 0.4rem',
               borderRadius: '4px',
-              color: '#d63384',
+              color: '#d20f39',
             },
           },
         },
@@ -93,17 +104,28 @@ export default {
             color: dark.text,
             a: {
               color: dark.link,
-              '&:hover': {
-                color: '#63b3ed',
-              },
             },
             h1: {
               color: dark.text,
             },
-            blockquote: {
-              color: '#ccc',
-              borderColor: '#444',
+            h2: {
+              color: dark.text,
             },
+            h3: {
+              color: dark.text,
+              fontWeight: '500'
+            },
+            h4: {
+              color: dark.text,
+              fontWeight: '500'
+            },
+            blockquote: {
+              color: dark.text2,
+              borderColor: dark.surface,
+            },
+            code: {
+              backgroundColor: dark.surface,
+            }
           },
         },
       },

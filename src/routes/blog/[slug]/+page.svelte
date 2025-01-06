@@ -7,6 +7,6 @@
     <p class="text-sm text-center">{data.date}</p>
     <p class="p-2 text-center">{data.description}</p>
 </div>
-<div class="prose" id="blog-content">
+<div class="prose prose-slate max-w-none lg:prose-lg" id="blog-content">
     <svelte:component this={data.content} />
 </div>
