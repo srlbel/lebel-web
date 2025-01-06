@@ -5,7 +5,8 @@ const light = {
   crust: '#dce0e8',
   accent: '#df8e1d',
   surface: '#ccd0da',
-  link: '#7287fd'
+  link: '#7287fd',
+  red: '#d20f39'
 }
 
 const dark = {
@@ -15,7 +16,8 @@ const dark = {
   crust: '#11111b',
   accent: '#f9e2af',
   surface: '#313244',
-  link: '#7287fd'
+  link: '#7287fd',
+  red: '#f38ba8'
 }
 
 /** @type {import('tailwindcss').Config} */
@@ -54,9 +56,7 @@ export default {
       typography: {
         DEFAULT: {
           css: {
-            fontFamily: {
-              "satoshi": ['Satoshi', "sans-serif"],
-            },
+            fontFamily: { "satoshi": ['Satoshi', "sans-serif"] },
             lineHeight: '1.8',
             color: light.text,
             a: {
@@ -66,22 +66,11 @@ export default {
                 textDecoration: 'underline',
               },
             },
-            h1: {
-              color: light.text,
-              fontWeight: '700',
-            },
-            h2: {
-              color: light.text,
-              fontWeight: '600',
-            },
-            h3: {
-              color: light.text,
-              fontWeight: '500'
-            },
-            h4: {
-              color: light.text,
-              fontWeight: '500'
-            },
+            strong: { color: light.text },
+            h1: { color: light.text, },
+            h2: { color: light.text },
+            h3: { color: light.text },
+            h4: { color: light.text },
             blockquote: {
               fontStyle: 'italic',
               borderLeftWidth: '4px',
@@ -90,10 +79,10 @@ export default {
               color: light.text2,
             },
             code: {
-              backgroundColor: light.surface,
+              backgroundColor: light.crust,
               padding: '0.2rem 0.4rem',
               borderRadius: '4px',
-              color: '#d20f39',
+              color: light.red,
             },
           },
         },
@@ -102,29 +91,18 @@ export default {
         dark: {
           css: {
             color: dark.text,
-            a: {
-              color: dark.link,
-            },
-            h1: {
-              color: dark.text,
-            },
-            h2: {
-              color: dark.text,
-            },
-            h3: {
-              color: dark.text,
-              fontWeight: '500'
-            },
-            h4: {
-              color: dark.text,
-              fontWeight: '500'
-            },
+            a: { color: dark.link },
+            strong: { color: dark.text },
+            h1: { color: dark.text },
+            h2: { color: dark.text, },
+            h3: { color: dark.text },
+            h4: { color: dark.text, },
             blockquote: {
               color: dark.text2,
               borderColor: dark.surface,
             },
             code: {
-              backgroundColor: dark.surface,
+              color: dark.text,
             }
           },
         },
