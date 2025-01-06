@@ -5,11 +5,11 @@ description: A quick guide on how to compile the new terminal Ghostty in Void Li
 published: true
 ---
 
-## Notes
+# Notes
 
 By the time I made wrote this, [ghostty](https://ghostty.org/) haven't announced a way to compile Ghostty in Void Linux and the [Void Packages](https://github.com/void-linux/void-packages) maintainers. So, there's probably a better way to install Ghostty using **xbps**.
 
-## Prerequisites
+# Prerequisites
 In order to compile you need the following packages:
 
 - zig
@@ -20,7 +20,7 @@ In order to compile you need the following packages:
 
 `gtk4-devel`, `libadwaita-devel` and `zig` are required for building ghostty for it's UI. `pkg-config` is mostly required to link the files from the dependencies to build the codebase. 
 
-## Process
+# Process
 
 ```
 git clone https://github.com/ghostty-org/ghostty
