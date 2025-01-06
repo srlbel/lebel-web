@@ -2,6 +2,7 @@
 title: Compiling Ghostty in Void Linux
 date: 28-12-2024
 description: A quick guide on how to compile the new terminal Ghostty in Void Linux
+tags: ['terminal', 'linux']
 published: true
 ---
 
@@ -18,7 +19,7 @@ In order to compile you need the following packages:
 - pkg-config
 - git
 
-`gtk4-devel`, `libadwaita-devel` and `zig` are required for building ghostty for it's UI. `pkg-config` is mostly required to link the files from the dependencies to build the codebase. 
+**gtk4-devel**, **libadwaita-devel** and **zig** are required for building ghostty for it's UI. **pkg-config** is mostly required to link the files from the dependencies to build the codebase. 
 
 # Process
 
