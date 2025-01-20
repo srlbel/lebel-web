@@ -1,5 +1,5 @@
 <script>
-    export let data;
+    let { data } = $props();
 </script>
 
 <div class="items-center flex flex-col my-10">
@@ -13,5 +13,5 @@
     </div>
 </div>
 <div class="prose prose-slate max-w-none lg:prose-lg" id="blog-content">
-    <svelte:component this={data.content} />
+    <data.content />
 </div>

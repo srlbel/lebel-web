@@ -3,6 +3,13 @@
   import Navbar from "../lib/components/navbar.svelte";
   import Pagebreak from "../lib/components/pagebreak.svelte";
   import "../tailwind.css";
+  /**
+   * @typedef {Object} Props
+   * @property {import('svelte').Snippet} [children]
+   */
+
+  /** @type {Props} */
+  let { children } = $props();
 </script>
 
 <svelte:head>
@@ -15,7 +22,7 @@
   <div class="w-full md:w-2/3 2xl:w-1/2 h-full pb-10 px-7">
     <Navbar />
     <Pagebreak />
-    <slot />
+    {@render children?.()}
     <Pagebreak />
     <Footer />
   </div>

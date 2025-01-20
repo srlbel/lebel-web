@@ -1,6 +1,6 @@
 <script>
-  export let data;
   import Bloglist from "../../lib/components/Bloglist.svelte";
+  let { data } = $props();
 </script>
 
 <main class="flex flex-col space-y-3 p-10">

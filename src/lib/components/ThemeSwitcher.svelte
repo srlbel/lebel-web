@@ -2,7 +2,7 @@
   import { Moon, Sun } from "lucide-svelte";
   import { browser } from "$app/environment";
 
-  let darkMode = false;
+  let darkMode = $state(false);
 
   const handleDarkMode = () => {
     darkMode = !darkMode;
@@ -39,11 +39,11 @@
 
 <div>
   {#if darkMode}
-    <button on:click={handleDarkMode}>
+    <button onclick={handleDarkMode}>
       <Moon class="w-5 h-5" />
     </button>
   {:else}
-    <button on:click={handleDarkMode}>
+    <button onclick={handleDarkMode}>
       <Sun class="w-5 h-5" />
     </button>
   {/if}
