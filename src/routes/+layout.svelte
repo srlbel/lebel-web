@@ -1,29 +1,21 @@
-<script>
-  import Footer from "../lib/components/footer.svelte";
-  import Navbar from "../lib/components/navbar.svelte";
-  import Pagebreak from "../lib/components/pagebreak.svelte";
-  import "../tailwind.css";
-  /**
-   * @typedef {Object} Props
-   * @property {import('svelte').Snippet} [children]
-   */
+<script lang="ts">
+	import '../index.css';
+	import Navbar from '$lib/components/Navbar.svelte';
+	import Footer from '$lib/components/Footer.svelte';
 
-  /** @type {Props} */
-  let { children } = $props();
+	const { children } = $props();
 </script>
 
 <svelte:head>
-  <title>lbel's cave</title>
+	<title>srlbel's shrine</title>
 </svelte:head>
 
-<main
-  class="overflow-x-hidden text-lg max-w-screen flex flex-col items-center min-h-screen text-text-light bg-base-light dark:bg-base-dark dark:text-text-dark font-satoshi"
->
-  <div class="w-full md:w-2/3 2xl:w-1/2 h-full pb-10 px-7">
-    <Navbar />
-    <Pagebreak />
-    {@render children?.()}
-    <Pagebreak />
-    <Footer />
-  </div>
+<main class="font-mono text-text bg-base min-h-screen dark:text-base dark:bg-text">
+	<div class="antialised max-w-xl mx-4 pt-8 lg:mx-auto">
+		<div class="flex-auto min-w-0 pt-6 flex flex-col px-2 md:px-0">
+			<Navbar />
+			{@render children()}
+			<Footer />
+		</div>
+	</div>
 </main>

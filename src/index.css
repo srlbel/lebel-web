@@ -1,0 +1,21 @@
+@import 'tailwindcss';
+
+:root {
+	--color-base: #fff4ed;
+	--color-text: #1d1d1d;
+	--color-blue: #6a81fb;
+	--color-red: #e15b73;
+	--color-orange: #ff7270;
+}
+
+@theme {
+	--color-base: var(--color-base);
+	--color-text: var(--color-text);
+	--color-blue: var(--color-blue);
+	--color-red: var(--color-red);
+	--color-orange: var(--color-orange);
+}
+
+::selection {
+	background-color: var(--color-blue);
+}
