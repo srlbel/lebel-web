@@ -1,129 +1,129 @@
-@import 'tailwindcss';
+@import "tailwindcss";
 
 :root {
-	--color-base: #fff4ed;
-	--color-text: #1d1d1d;
-	--color-blue: #6a81fb;
-	--color-red: #e15b73;
-	--color-orange: #ff7270;
+  --color-base: #fff4ed;
+  --color-text: #1d1d1d;
+  --color-blue: #6a81fb;
+  --color-red: #e15b73;
+  --color-orange: #ff7270;
 }
 
 @theme {
-	--color-base: var(--color-base);
-	--color-text: var(--color-text);
-	--color-blue: var(--color-blue);
-	--color-red: var(--color-red);
-	--color-orange: var(--color-orange);
+  --color-base: var(--color-base);
+  --color-text: var(--color-text);
+  --color-blue: var(--color-blue);
+  --color-red: var(--color-red);
+  --color-orange: var(--color-orange);
 }
 
 ::selection {
-	background-color: var(--color-blue);
+  background-color: var(--color-blue);
 }
 
 .prose .anchor {
-	@apply absolute invisible no-underline;
+  @apply absolute invisible no-underline;
 
-	margin-left: -1em;
-	padding-right: 0.5em;
-	width: 80%;
-	max-width: 700px;
-	cursor: pointer;
+  margin-left: -1em;
+  padding-right: 0.5em;
+  width: 80%;
+  max-width: 700px;
+  cursor: pointer;
 }
 
 .anchor:hover {
-	@apply visible;
+  @apply visible;
 }
 
 .prose a {
-	@apply underline transition-all decoration-blue underline-offset-2 decoration-[0.1em];
+  @apply underline transition-all decoration-blue underline-offset-2 decoration-[0.1em];
 }
 
 .prose .anchor:after {
-	@apply text-neutral-300 dark:text-neutral-700;
-	content: '#';
+  @apply text-neutral-300 dark:text-neutral-700;
+  content: "#";
 }
 
-.prose *:hover>.anchor {
-	@apply visible;
+.prose *:hover > .anchor {
+  @apply visible;
 }
 
 .prose pre {
-	@apply bg-neutral-50 dark:bg-neutral-900 rounded-lg overflow-x-auto border border-neutral-200 dark:border-neutral-900 py-2 px-3 text-sm;
+  @apply bg-neutral-50 dark:bg-neutral-900 rounded-lg overflow-x-auto border border-neutral-200 dark:border-neutral-900 py-2 px-3 text-sm;
 }
 
 .prose code {
-	@apply px-1 py-0.5 rounded-lg;
+  @apply px-1 py-0.5 rounded-lg;
 }
 
 .prose pre code {
-	@apply p-0;
-	border: initial;
-	line-height: 1.5;
+  @apply p-0;
+  border: initial;
+  line-height: 1.5;
 }
 
 .prose code span {
-	@apply font-medium;
+  @apply font-medium;
 }
 
 .prose img {
-	@apply m-0;
+  @apply m-0;
 }
 
 .prose p {
-	@apply my-4 text-text dark:text-base;
+  @apply my-4 text-text dark:text-base;
 }
 
 .prose h1 {
-	@apply text-2xl font-medium tracking-tight mt-6 mb-2;
+  @apply text-2xl font-medium tracking-tight mt-6 mb-2;
 }
 
 .prose h2 {
-	@apply text-xl font-medium tracking-tight mt-6 mb-2;
+  @apply text-xl font-medium tracking-tight mt-6 mb-2;
 }
 
 .prose h3 {
-	@apply text-xl font-medium tracking-tight mt-6 mb-2;
+  @apply text-xl font-medium tracking-tight mt-6 mb-2;
 }
 
 .prose h4 {
-	@apply text-lg font-medium tracking-tight mt-6 mb-2;
+  @apply text-lg font-medium tracking-tight mt-6 mb-2;
 }
 
 .prose strong {
-	@apply font-black;
+  @apply font-black;
 }
 
 .prose ul {
-	@apply list-disc pl-6;
+  @apply list-disc pl-6;
 }
 
 .prose ol {
-	@apply list-decimal pl-6;
+  @apply list-decimal pl-6;
 }
 
 pre::-webkit-scrollbar {
-	display: none;
+  display: none;
 }
 
 pre {
-	-ms-overflow-style: none;
-	scrollbar-width: none;
+  -ms-overflow-style: none;
+  scrollbar-width: none;
 }
 
-input[type='text'],
-input[type='email'] {
-	-webkit-appearance: none;
-	-moz-appearance: none;
-	appearance: none;
+input[type="text"],
+input[type="email"] {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
 }
 
 table {
-	display: block;
-	max-width: fit-content;
-	overflow-x: auto;
-	white-space: nowrap;
+  display: block;
+  max-width: fit-content;
+  overflow-x: auto;
+  white-space: nowrap;
 }
 
 .title {
-	text-wrap: balance;
+  text-wrap: balance;
 }
