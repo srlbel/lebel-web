@@ -1,3 +1,9 @@
-- Add Meta Tags
-- Make a mini blog at /misc
-- Make a portfolio at /me
+- [ ] Add SEO Tags
+- [x] Make a mini blog at /blog
+- [ ] Make a portfolio at /me
+- [ ] Change blog styles
+- [ ] Change font
+- [ ] Add Singleton shiki at svelte.config
+- [ ] Add rss feed
+- [ ] Limit the amount of blogs that appears in /
+- [ ] Simplify routes with components

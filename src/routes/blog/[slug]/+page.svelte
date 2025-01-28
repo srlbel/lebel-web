@@ -1,17 +1,27 @@
-<script>
-    export let data;
+<script lang="ts">
+  import type { PageProps } from "./$types";
+  let { data }: PageProps = $props();
 </script>
 
-<div class="items-center flex flex-col my-10">
-    <h1 class="text-3xl font-bold text-center">{data.title}</h1>
-    <p class="text-sm text-center">{data.date}</p>
-    <p class="p-2 text-center">{data.description}</p>
-    <div class="flex flex-row space-x-2">
-        {#each data.tags as tag}
-            <p class="font-semibold italic">{tag}</p>
-        {/each}
-    </div>
-</div>
-<div class="prose prose-slate max-w-none lg:prose-lg" id="blog-content">
-    <svelte:component this={data.content} />
-</div>
+<svelte:head>
+  <title>{data.meta.title}</title>
+  <meta property="og:type" content="article" />
+  <meta property="og:title" content={data.meta.title} />
+</svelte:head>
+
+<article>
+  <hgroup class="mb-4">
+    <h1 class="mb-2 text-2xl font-semibold tracking-tight">{data.meta.title}</h1>
+    <p class="mb-4">Published at {data.meta.date}</p>
+  </hgroup>
+
+  <div class="mb-4">
+    {#each data.meta.tags as tag}
+      <span class="mr-2">&num;{tag}</span>
+    {/each}
+  </div>
+
+  <div class="prose">
+    <data.content />
+  </div>
+</article>

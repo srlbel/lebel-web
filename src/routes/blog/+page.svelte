@@ -1,21 +1,20 @@
-<script>
-  export let data;
-  import Bloglist from "../../lib/components/Bloglist.svelte";
+<script lang="ts">
+  import type { PageData, PageProps } from "./$types";
+
+  export let data: PageData;
+  const { posts } = data;
 </script>
 
-<main class="flex flex-col space-y-3 p-10">
-  <h1 class="text-2xl font-semibold">My Blog List</h1>
-
-  <div class="flex flex-col space-y-3">
-    {#each data.posts as post}
-      <Bloglist
-        blogData={{
-          title: post.meta.title,
-          description: post.meta.description,
-          date: post.meta.date,
-          path: post.path,
-        }}
-      />
-    {/each}
-  </div>
-</main>
+<section>
+<h1 class="text-2xl mb-8 font-semibold tracking-tight">Blog Posts</h1>
+	<ul>
+		{#each data.posts as post}
+			<li class="mb-4">
+				<a class="hover:text-blue transition-all" href={`/blog/${post.slug}`}>
+          {post.title} 
+          <p class="text-sm">{post.date}</p>
+        </a>
+			</li>
+		{/each}
+	</ul>
+</section>
