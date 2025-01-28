@@ -23,7 +23,7 @@ In order to compile you need the following packages:
 
 # Process
 
-```
+```shell
 git clone https://github.com/ghostty-org/ghostty
 cd ghostty
 zig build -Doptimize=ReleaseFast
@@ -31,7 +31,7 @@ zig build -Doptimize=ReleaseFast
 
 According to the Ghostty documentation, for a system wide installation the following command can be used:
 
-```
+```shell
 zig build -p /usr -Doptimize=ReleaseFast
 ```
 
