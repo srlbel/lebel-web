@@ -17,7 +17,7 @@
 	<ul>
 		{#each data.posts as post}
 			<li class="mb-4">
-				<a class="hover:text-blue transition-all" href={`/blog/${post.slug}`}>
+				<a class="underline transition-all decoration-orange underline-offset-2 decoration-[0.1em] hover:text-orange" href={`/blog/${post.slug}`}>
 					{post.title}
 					<p class="text-sm">{post.date}</p>
 				</a>
