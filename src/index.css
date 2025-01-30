@@ -1,5 +1,7 @@
 @import "tailwindcss";
 
+@custom-variant dark (&:where(.dark, .dark *));
+
 :root {
   --color-base: #fff4ed;
   --color-text: #1d1d1d;
@@ -35,7 +37,11 @@
 }
 
 .prose a {
-  @apply underline transition-all decoration-blue underline-offset-2 decoration-[0.1em];
+  @apply underline transition-all decoration-orange underline-offset-2 decoration-[0.1em];
+}
+
+.prose a:hover {
+  @apply text-orange;
 }
 
 .prose .anchor:after {
