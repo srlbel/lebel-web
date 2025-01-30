@@ -1,4 +1,4 @@
-- [ ] Add SEO Tags
+- [x] Add SEO Tags
 - [x] Make a mini blog at /blog
 - [ ] Make a portfolio at /me
 - [x] Change blog styles
