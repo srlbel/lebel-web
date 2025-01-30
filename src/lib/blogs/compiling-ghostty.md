@@ -2,7 +2,7 @@
 title: Compiling Ghostty in Void Linux
 date: 28-12-2024
 description: A quick guide on how to compile the new terminal Ghostty in Void Linux
-tags: ["terminal", "linux"]
+tags: ['terminal', 'linux']
 published: true
 ---
 

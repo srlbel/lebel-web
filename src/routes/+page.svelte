@@ -5,15 +5,11 @@
 <section class="mb-8">
 	<h1 class="mb-8 text-2xl font-semibold tracking-tighter">Lbel's Shrine</h1>
 	<p class="mb-4">
-		Student of Systems Engineering. Currently I'm looking to properly learn
-		systems management, web development and game development. I want to focus in
-		maths and overall linux knownlegde.
+		Student of Systems Engineering. Currently I'm looking to properly learn systems management, web
+		development and game development. I want to focus in maths and overall linux knownlegde.
 	</p>
 
-	<p>
-		I will use this website to share insights, opinions and also use it as my
-		portfolio.
-	</p>
+	<p>I will use this website to share insights, opinions and also use it as my portfolio.</p>
 </section>
 
 <section>
@@ -22,10 +18,10 @@
 		{#each data.posts as post}
 			<li class="mb-4">
 				<a class="hover:text-blue transition-all" href={`/blog/${post.slug}`}>
-          {post.title} 
-          <p class="text-sm">{post.date}</p>
-        </a>
+					{post.title}
+					<p class="text-sm">{post.date}</p>
+				</a>
 			</li>
-			{/each}
+		{/each}
 	</ul>
 </section>

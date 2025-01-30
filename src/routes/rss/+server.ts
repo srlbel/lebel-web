@@ -1,5 +1,5 @@
-import type { RequestHandler } from "@sveltejs/kit";
+import type { RequestHandler } from '@sveltejs/kit';
 
 export const GET: RequestHandler = async () => {
-  return new Response(String("not implemented yet"));
+	return new Response(String('not implemented yet'));
 };
