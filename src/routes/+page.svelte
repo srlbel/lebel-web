@@ -3,7 +3,7 @@
 </script>
 
 <svelte:head>
-	<title>Personal Website of Juan Simancas</title>
+	<title>Lbel's Shrine/title>
 	<meta
 		name="description"
 		content="The personal website and blog of SrLbel. Posts about engineering and software."
