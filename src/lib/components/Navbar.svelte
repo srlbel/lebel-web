@@ -25,7 +25,7 @@
 			<div class="flex flex-row items-center space-x-0 pr-10">
 				{#each items as link}
 					<a
-						class="transition-all hover:text-blue flex align-middle relative py-1 px-2 m-1"
+						class="transition-all hover:text-orange flex align-middle relative py-1 px-2 m-1"
 						href={link.ref}>{link.name}</a
 					>
 				{/each}
