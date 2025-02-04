@@ -80,7 +80,7 @@
 		<div class="grid grid-cols-1 md:grid-cols-3 gap-2 mb-4 place-content-center">
 			{#each skill.techs as tech}
 				<div
-					class="flex text-center border-1 p-4 justify-between items-center w-full dark:border-[#e08e79] border-[#d9a88f]"
+					class="flex text-center border-1 p-4 justify-between items-center w-full dark:border-[#e08e79] border-[#d9a88f] hover:bg-orange-100 dark:hover:bg-[#5A4A42] transition-all"
 				>
 					<img
 						class="aspect-square w-10 h-10"
