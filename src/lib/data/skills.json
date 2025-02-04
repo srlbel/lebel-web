@@ -4,6 +4,7 @@
 		"techs": [
 			{ "name": "Svelte", "urlRef": "svelte" },
 			{ "name": "NextJs", "urlRef": "nextjs" },
+			{ "name": "React", "urlRef": "react" },
 			{ "name": "Bootstrap", "urlRef": "bootstrap" },
 			{ "name": "TailwindCSS", "urlRef": "tailwindcss" },
 			{ "name": "CSS", "urlRef": "css" },
