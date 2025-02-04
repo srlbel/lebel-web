@@ -1,78 +1,10 @@
 <script lang="ts">
 	import { ArrowUpRight } from 'lucide-svelte';
+	import projects from '$lib/data/projects.json';
+	import skills from '$lib/data/skills.json';
 
 	const BASE_ICON_URL = 'https://skillicons.dev/icons?i=';
-
-	const projects = [
-		{
-			name: 'lbel website',
-			description: 'My simple personal website to host my personal blog and my information.',
-			tech: ['svelte', 'tailwindcss', 'nodejs', 'markdown'],
-			repo: 'https://github.com/srlbel/lebel-web'
-		},
-		{
-			name: 'unix dotfiles',
-			description: 'Collection of my dotfiles for unix systems',
-			tech: ['linux', 'bash', 'neovim'],
-			repo: 'https://github.com/srlbel/dotfiles'
-		},
-		{
-			name: 'roadmap.sh backend projects',
-			description: 'Collection of projects from Roadmap.sh for backend practice',
-			tech: ['javascript', 'rust', 'go'],
-			repo: 'https://github.com/srlbel/roadmap-sh-backend-projects'
-		}
-	];
-
-	const skills = [
-		{
-			name: 'Frontend',
-			techs: [
-				{ name: 'Svelte', urlRef: 'svelte' },
-				{ name: 'NextJs', urlRef: 'nextjs' },
-				{ name: 'Bootstrap', urlRef: 'bootstrap' },
-				{ name: 'TailwindCSS', urlRef: 'tailwindcss' },
-				{ name: 'CSS', urlRef: 'css' },
-				{ name: 'HTML', urlRef: 'html' }
-			]
-		},
-		{
-			name: 'Backend',
-			techs: [
-				{ name: 'MongoDB', urlRef: 'mongodb' },
-				{ name: 'MySQL', urlRef: 'mysql' },
-				{ name: 'PostgreSQL', urlRef: 'postgresql' },
-				{ name: 'ExpressJs', urlRef: 'expressjs' },
-				{ name: 'ElysiaJs', urlRef: 'elysia' },
-				{ name: 'Bun', urlRef: 'bun' },
-				{ name: 'NodeJs', urlRef: 'nodejs' },
-				{ name: 'Laravel', urlRef: 'laravel' }
-			]
-		},
-		{
-			name: 'Languages',
-			techs: [
-				{ name: 'TypeScript', urlRef: 'typescript' },
-				{ name: 'JavaScript', urlRef: 'javascript' },
-				{ name: 'Go', urlRef: 'go' },
-				{ name: 'Rust', urlRef: 'rust' },
-				{ name: 'Python', urlRef: 'python' },
-				{ name: 'PHP', urlRef: 'php' },
-				{ name: 'MarkDown', urlRef: 'markdown' }
-			]
-		},
-		{
-			name: 'Tools',
-			techs: [
-				{ name: 'Linux', urlRef: 'linux' },
-				{ name: 'Bash', urlRef: 'bash' },
-				{ name: 'Git', urlRef: 'git' },
-				{ name: 'GitHub', urlRef: 'github' },
-				{ name: 'NPM', urlRef: 'npm' },
-				{ name: 'Neovim', urlRef: 'neovim' }
-			]
-		}
-	];
+	const ICONS_PERLINE = 2;
 </script>
 
 <svelte:head>
@@ -97,7 +29,10 @@
 	<h2 class="mb-4 text-xl font-semibold tracking-tighter">Projects</h2>
 	{#each projects as project}
 		<div class="mb-2 flex flex-row justify-between border-1 p-4">
-			<img alt="tech list" src={`${BASE_ICON_URL}${project.tech.join(',')}&perline=2`} />
+			<img
+				alt="tech list"
+				src={`${BASE_ICON_URL}${project.tech.join(',')}&perline=${ICONS_PERLINE}`}
+			/>
 			<div class="flex flex-col justify-between text-right w-2/3 space-y-2">
 				<div>
 					<h2 class="text-xl font-semibold tracking-tighter">{project.name}</h2>
