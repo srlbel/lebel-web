@@ -3,7 +3,7 @@
 </script>
 
 <svelte:head>
-	<title>Lbel's Shrine/title>
+	<title>Lbel's Shrine</title>
 	<meta
 		name="description"
 		content="The personal website and blog of SrLbel. Posts about engineering and software."
