@@ -33,6 +33,12 @@
 		{/each}
 	</ul>
 	<p class="mt-8">
-		&copy; {new Date().getFullYear()} MIT Licensed
+		This is website under the UNLICENSE <span class="italic"> license </span>. for more information
+		see:
+		<a
+			href="https://unlicense.org/"
+			class="underline transition-all decoration-orange underline-offset-2 decoration-[0.1em] hover:text-orange"
+			>https://unlicense.org</a
+		>
 	</p>
 </footer>
