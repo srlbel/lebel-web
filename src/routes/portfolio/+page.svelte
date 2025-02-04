@@ -121,7 +121,7 @@
 	<h2 class="mb-4 text-xl font-semibold tracking-tighter">Skills</h2>
 	{#each skills as skill}
 		<h3 class="mb-2 text-xl italic tracking-tighter">{skill.name}</h3>
-		<div class="grid grid-cols-1 md:grid-cols-3 gap-2 mb-4 place-content-center">
+		<div class="grid grid-cols-2 md:grid-cols-3 gap-2 mb-4 place-content-center">
 			{#each skill.techs as tech}
 				<div class="flex text-center border-1 p-4 justify-between items-center w-full">
 					<img
