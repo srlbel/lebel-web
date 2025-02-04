@@ -9,6 +9,18 @@
 			description: 'My simple personal website to host my personal blog and my information.',
 			tech: ['svelte', 'tailwindcss', 'nodejs', 'markdown'],
 			repo: 'https://github.com/srlbel/lebel-web'
+		},
+		{
+			name: 'unix dotfiles',
+			description: 'Collection of my dotfiles for unix systems',
+			tech: ['linux', 'bash', 'neovim'],
+			repo: 'https://github.com/srlbel/dotfiles'
+		},
+		{
+			name: 'roadmap.sh backend projects',
+			description: 'Collection of projects from Roadmap.sh for backend practice',
+			tech: ['javascript', 'rust', 'go'],
+			repo: 'https://github.com/srlbel/roadmap-sh-backend-projects'
 		}
 	];
 
@@ -57,7 +69,7 @@
 				{ name: 'Git', urlRef: 'git' },
 				{ name: 'GitHub', urlRef: 'github' },
 				{ name: 'NPM', urlRef: 'npm' },
-				{ name: 'Vim', urlRef: 'vim' }
+				{ name: 'Neovim', urlRef: 'neovim' }
 			]
 		}
 	];

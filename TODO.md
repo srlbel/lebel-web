@@ -1,6 +1,6 @@
 - [x] Add SEO Tags
 - [x] Make a mini blog at /blog
-- [ ] Make a portfolio at /me
+- [x] Make a portfolio at /me
 - [x] Change blog styles
 - [x] Change font
 - [x] Add Singleton shiki at svelte.config
