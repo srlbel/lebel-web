@@ -10,7 +10,9 @@
 	<title>srlbel's shrine</title>
 </svelte:head>
 
-<main class="font-mono text-text bg-base min-h-screen dark:text-base dark:bg-text">
+<main
+	class="font-mono text-text bg-base min-h-screen dark:text-base dark:bg-text transition-colors"
+>
 	<div class="antialised max-w-xl mx-4 pt-8 lg:mx-auto">
 		<div class="flex-auto min-w-0 pt-6 flex flex-col px-2 md:px-0">
 			<Navbar />

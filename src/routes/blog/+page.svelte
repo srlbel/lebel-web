@@ -1,7 +1,5 @@
 <script lang="ts">
-	import type { PageData, PageProps } from './$types';
-
-	export let data: PageData;
+	export let data;
 	const { posts } = data;
 </script>
 
