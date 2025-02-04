@@ -1,5 +1,5 @@
 <script lang="ts">
-	import { ArrowUpRight } from 'lucide-svelte';
+	import Link from './Link.svelte';
 	const items = [
 		{
 			name: 'rss',
@@ -20,25 +20,13 @@
 	<ul class="font-sm mt-8 flex flex-col space-x-0 space-y-2 md:flex-row md:space-x-4 md:space-y-0">
 		{#each items as link}
 			<li>
-				<a
-					href={link.ref}
-					class="flex items-center transition-all hover:text-blue"
-					target="_blank"
-					rel="noopener noreferrer"
-				>
-					<p class="mr-2 h-7">{link.name}</p>
-					<ArrowUpRight class="w-5" />
-				</a>
+				<Link href={link.ref} text={link.name} isBlank isOutside />
 			</li>
 		{/each}
 	</ul>
 	<p class="mt-8">
 		This is website under the UNLICENSE <span class="italic"> license </span>. for more information
 		see:
-		<a
-			href="https://unlicense.org/"
-			class="underline transition-all decoration-orange underline-offset-2 decoration-[0.1em] hover:text-orange"
-			>https://unlicense.org</a
-		>
+		<Link href="https://unlicense.org/" text="https://unlicense.org" isOutside isBlank />
 	</p>
 </footer>

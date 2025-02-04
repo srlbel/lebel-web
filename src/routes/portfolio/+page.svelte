@@ -2,6 +2,7 @@
 	import { ArrowUpRight } from 'lucide-svelte';
 	import projects from '$lib/data/projects.json';
 	import skills from '$lib/data/skills.json';
+	import Link from '$lib/components/Link.svelte';
 
 	const BASE_ICON_URL = 'https://skillicons.dev/icons?i=';
 	const ICONS_PERLINE = 2;
@@ -38,15 +39,7 @@
 					<h2 class="text-xl font-semibold tracking-tighter">{project.name}</h2>
 					<p class="italic text-sm">{project.description}</p>
 				</div>
-				<a
-					rel="noopener noreferrer"
-					href={project.repo}
-					target="_blank"
-					class="flex items-center justify-end hover:text-blue underline transition-all decoration-blue underline-offset-2 decoration-[0.1em]"
-				>
-					<p class="mr-2 h-7">repository</p>
-					<ArrowUpRight class="w-5" />
-				</a>
+				<Link href={project.repo} text="repository" isOutside isBlank class="justify-end" />
 			</div>
 		</div>
 	{/each}

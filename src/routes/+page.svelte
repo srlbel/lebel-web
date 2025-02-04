@@ -1,4 +1,5 @@
 <script lang="ts">
+	import Link from '$lib/components/Link.svelte';
 	let { data } = $props();
 </script>
 
@@ -42,13 +43,7 @@
 	<ul>
 		{#each data.posts as post}
 			<li class="mb-4">
-				<a
-					class="underline transition-all decoration-orange underline-offset-2 decoration-[0.1em] hover:text-orange"
-					href={`/blog/${post.slug}`}
-				>
-					{post.title}
-					<p class="text-sm">{post.date}</p>
-				</a>
+				<Link text={post.title} href={`/blog/${post.slug}`} />
 			</li>
 		{/each}
 	</ul>

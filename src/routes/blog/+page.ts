@@ -8,7 +8,7 @@ export const load: PageLoad = async () => {
 
 		return {
 			slug,
-			...(post as { metadata: { title: string; date: string } }).metadata
+			...(post as { metadata: { title: string; date: string; tags: string } }).metadata
 		};
 	});
 

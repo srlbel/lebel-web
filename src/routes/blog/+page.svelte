@@ -8,8 +8,11 @@
 	<ul>
 		{#each posts as post}
 			<li class="mb-4">
-				<a class="hover:text-blue transition-all" href={`/blog/${post.slug}`}>
-					{post.title}
+				<a class="hover:text-blue transition-all space-y-1" href={`/blog/${post.slug}`}>
+					<div>
+						<p>{post.title}</p>
+						<p class="text-sm">{post.tags}</p>
+					</div>
 					<p class="text-sm">{post.date}</p>
 				</a>
 			</li>

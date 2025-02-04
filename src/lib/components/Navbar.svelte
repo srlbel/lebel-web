@@ -1,5 +1,6 @@
 <script lang="ts">
 	import Theme from './Theme.svelte';
+	import Link from './Link.svelte';
 
 	const items = [
 		{
@@ -22,12 +23,9 @@
 		<nav
 			class="flex flex-row items-start relative px-0 pb-0 fade md:overflow-auto scroll-pr-6 md:relative"
 		>
-			<div class="flex flex-row items-center space-x-0 pr-10">
+			<div class="flex flex-row items-center">
 				{#each items as link}
-					<a
-						class="transition-all hover:text-orange flex align-middle relative py-1 px-2 m-1"
-						href={link.ref}>{link.name}</a
-					>
+					<Link href={link.ref} text={link.name} class="py-1 px-2 m-1" />
 				{/each}
 				<Theme />
 			</div>
