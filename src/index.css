@@ -40,28 +40,19 @@
 }
 
 .prose a {
-	@apply underline transition-all decoration-orange underline-offset-2 decoration-[0.1em] text-blue hover:text-orange;
+	@apply underline transition-all decoration-orange underline-offset-2 decoration-[0.1em] text-text dark:text-base hover:text-orange;
 }
 
-.prose a:hover {
-	@apply text-orange;
-}
-
-.prose .anchor:after {
-	@apply text-neutral-300 dark:text-neutral-700;
-	content: '#';
-}
-
-.prose *:hover > .anchor {
+.prose *:hover > a {
 	@apply visible;
 }
 
 .prose code {
-	@apply px-1 py-0.5 rounded-lg;
+	@apply px-1 py-0.5 rounded-none;
 }
 
 .prose pre {
-	@apply bg-neutral-50 dark:bg-neutral-900 rounded-lg overflow-x-auto border border-neutral-200 dark:border-neutral-800 py-3 px-4 text-sm;
+	@apply bg-neutral-50 dark:bg-neutral-900 rounded-none overflow-x-auto border border-neutral-200 dark:border-neutral-800 py-3 px-4 text-sm;
 }
 
 .prose pre code {
@@ -121,7 +112,7 @@
 }
 
 .prose code:not(pre code) {
-	@apply bg-neutral-100 dark:bg-neutral-800 text-red px-1.5 py-0.5 rounded-md text-sm font-mono;
+	@apply bg-neutral-100 dark:bg-neutral-800 text-red px-1.5 py-0.5 rounded-none text-sm font-mono;
 }
 
 
@@ -146,7 +137,7 @@
 }
 
 .prose img {
-	@apply my-6 rounded-lg shadow-lg;
+	@apply my-6 rounded-none shadow-lg;
 }
 
 pre::-webkit-scrollbar {
