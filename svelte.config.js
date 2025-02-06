@@ -5,6 +5,19 @@ import rehypeSlug from 'rehype-slug';
 import remarkToc from 'remark-toc';
 import { createHighlighter } from 'shiki';
 
+let highlighter;
+
+async function getHighlighter() {
+	if (!highlighter) {
+		highlighter = await createHighlighter({
+			themes: ['ayu-dark'],
+			langs: ['javascript', 'typescript', 'bash', 'shell', 'css']
+		});
+		await highlighter.loadLanguage('javascript', 'typescript');
+	}
+	return highlighter;
+}
+
 /** @type {import('mdsvex').MdsvexOptions} */
 const mdsvexConfig = {
 	extensions: ['.md'],
@@ -12,11 +25,7 @@ const mdsvexConfig = {
 	rehypePlugins: [rehypeSlug],
 	highlight: {
 		highlighter: async (code, lang = 'text') => {
-			const highlighter = await createHighlighter({
-				themes: ['ayu-dark'],
-				langs: ['javascript', 'typescript', 'bash', 'shell']
-			});
-			await highlighter.loadLanguage('javascript', 'typescript');
+			const highlighter = await getHighlighter();
 
 			const html = escapeSvelte(
 				highlighter.codeToHtml(code, {
