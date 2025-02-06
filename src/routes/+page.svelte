@@ -1,6 +1,7 @@
 <script lang="ts">
 	import Link from '$lib/components/Link.svelte';
-	let { data } = $props();
+	import type { MarkdownPost } from '$lib/types';
+	const { data }: { data: { posts: MarkdownPost[] } } = $props();
 </script>
 
 <svelte:head>
@@ -32,7 +33,7 @@
 	<h1 class="mb-8 text-2xl font-semibold tracking-tighter">Lbel's Shrine</h1>
 	<p class="mb-4">
 		Student of Systems Engineering. Currently I'm looking to properly learn systems management, web
-		development and game development. I want to focus in maths and overall linux knownlegde.
+		development and game development. I want to focus in maths and overall linux knowlegde.
 	</p>
 
 	<p>I will use this website to share insights, opinions and also use it as my portfolio.</p>
@@ -43,7 +44,7 @@
 	<ul>
 		{#each data.posts as post}
 			<li class="mb-4">
-				<Link text={post.title} href={`/blog/${post.slug}`} />
+				<Link text={post.meta.title} href={`/blog/${post.path}`} />
 			</li>
 		{/each}
 	</ul>

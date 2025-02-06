@@ -1,12 +1,16 @@
-export type Categories = string;
+export type Tag = string;
 
 export type Post = {
 	title: string;
-	slug: string;
 	description: string;
 	date: string;
-	categories: Categories[];
+	tags: Tag[];
 	published: boolean;
+};
+
+export type MarkdownPost = {
+	meta: Post;
+	path: string;
 };
 
 export type Link = {

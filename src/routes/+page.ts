@@ -1,7 +1,8 @@
-import type { Post } from '$lib/types';
+import type { MarkdownPost } from '$lib/types';
+import type { PageLoad } from './$types';
 
-export const load = async ({ fetch }) => {
+export const load: PageLoad = async ({ fetch }) => {
 	const response = await fetch('api/posts');
-	const posts: Post[] = await response.json();
+	const posts: MarkdownPost[] = await response.json();
 	return { posts };
 };

@@ -1,18 +1,8 @@
+import type { MarkdownPost } from '$lib/types';
 import type { PageLoad } from './$types';
 
-export const load: PageLoad = async () => {
-	const posts = import.meta.glob('/src/lib/blogs/*.md', { eager: true });
-
-	const postList = Object.entries(posts).map(([path, post]) => {
-		const slug = path.split('/').pop().replace('.md', '');
-
-		return {
-			slug,
-			...(post as { metadata: { title: string; date: string; tags: string } }).metadata
-		};
-	});
-
-	return {
-		posts: postList
-	};
+export const load: PageLoad = async ({ fetch }) => {
+	const response = await fetch('api/posts');
+	const posts: MarkdownPost[] = await response.json();
+	return { posts };
 };
