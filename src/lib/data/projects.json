@@ -2,7 +2,7 @@
 	{
 		"name": "lbel website",
 		"description": "My simple personal website to host my personal blog and my information.",
-		"tech": ["svelte", "tailwindcss", "nodejs", "markdown"],
+		"tech": ["svelte", "tailwindcss", "nodejs", "typescript"],
 		"repo": "https://github.com/srlbel/lebel-web"
 	},
 	{
