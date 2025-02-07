@@ -1,6 +1,19 @@
 <script lang="ts">
 	import { Moon, Sun } from 'lucide-svelte';
+	import { browser } from '$app/environment';
+	import { onMount } from 'svelte';
+
 	let darkMode = $state(false);
+
+	onMount(() => {
+		if (!browser) return;
+
+		const storedTheme = localStorage.getItem('theme');
+		const prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
+		darkMode = storedTheme === 'dark' || (!storedTheme && prefersDark);
+
+		document.documentElement.classList.toggle('dark', darkMode);
+	});
 
 	const handleToggle = () => {
 		darkMode = !darkMode;
