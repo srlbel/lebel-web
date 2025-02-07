@@ -3,6 +3,14 @@
 	const { data }: { data: { posts: MarkdownPost[] } } = $props();
 </script>
 
+<svelte:head>
+	<title>srlbel's bloglist</title>
+	<meta name="description" content="srlbel's bloglist" />
+	<meta property="og:title" content="srlbel's bloglist" />
+	<meta property="og:description" content="srlbel's bloglist" />
+	<meta property="og:image" content="https://srlbel.is-a.dev/favicon.jpg" />
+</svelte:head>
+
 <section>
 	<h1 class="text-2xl mb-8 font-semibold tracking-tight">Blog Posts</h1>
 	<ul>

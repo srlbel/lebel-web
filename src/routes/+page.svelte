@@ -5,28 +5,33 @@
 </script>
 
 <svelte:head>
-	<title>Lbel's Shrine</title>
+	<title>lbel's shrine</title>
 	<meta
 		name="description"
-		content="The personal website and blog of SrLbel. Posts about engineering and software."
+		content="srlbel's portfolio & blog. showing both software and engineering."
 	/>
-	<meta property="og:type" content="website" />
-	<meta property="og:url" content="https://srlbel.is-a.dev/" />
-	<meta property="og:title" content="Personal Website of SrLbel" />
+	<meta name="keywords" content="srlbel, Web Developer, Portfolio, Frontend, JavaScript, Svelte" />
+	<meta name="author" content="srlbel" />
+
+	<!-- Open Graph -->
+	<meta property="og:title" content="srlbel's shrine" />
 	<meta
 		property="og:description"
-		content="The personal website and blog of Srlbel. Post about engineering and software"
+		content="srlbel's portfolio & blog. showing both software and engineering"
 	/>
 	<meta property="og:image" content="https://srlbel.is-a.dev/favicon.jpg" />
-	<meta property="og:image:alt" content="Website logo" />
-	<meta property="twitter:url" content="https://srlbel.is-a.dev/" />
-	<meta property="twitter:title" content="Personal Website of SrLbel" />
+	<meta property="og:url" content="https://srlbel.is-a.dev" />
+	<meta property="og:type" content="website" />
+
+	<!-- Twitter Card -->
+	<meta name="twitter:card" content="summary_large_image" />
+	<meta name="twitter:title" content="srlbel's shrine" />
 	<meta
-		property="twitter:description"
-		content="The personal website and blog of Srlbel. Post about engineering and software"
+		name="twitter:description"
+		content=" srlbel's portfolio & blog. showing both software and engineering "
 	/>
-	<meta property="twitter:image" content="https://srlbel.is-a.dev/favicon.jpg" />
-	<meta property="twitter:image:alt" content="Website logo" />
+	<meta name="twitter:image" content="https://srlbel.is-a.dev/favicon.jpg" />
+	<meta name="twitter:site" content="@srlbel" />
 </svelte:head>
 
 <section class="mb-8">

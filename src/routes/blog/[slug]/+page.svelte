@@ -4,17 +4,19 @@
 
 <svelte:head>
 	<title>{data.meta.title}</title>
+	<link rel="canonical" href={data.meta.url} />
+	<meta name="description" content={data.meta.description} />
+
 	<meta property="og:type" content="article" />
 	<meta property="og:title" content={data.meta.title} />
-	<meta name="description" content={data.meta.description} />
-	<meta property="og:type" content="website" />
 	<meta property="og:url" content="https://srlbel.is-a.dev/" />
 	<meta property="og:title" content={data.meta.title} />
 	<meta property="og:description" content={data.meta.description} />
 	<meta property="og:image" content="https://srlbel.is-a.dev/favicon.jpg" />
 	<meta property="og:image:alt" content="Website logo" />
+
 	<meta property="twitter:url" content="https://srlbel.is-a.dev/" />
-	<meta property="twitter:title" content={data.meta.description} />
+	<meta property="twitter:title" content={data.meta.title} />
 	<meta property="twitter:description" content={data.meta.description} />
 	<meta property="twitter:image" content="https://srlbel.is-a.dev/favicon.jpg" />
 	<meta property="twitter:image:alt" content="Website logo" />
