@@ -5,10 +5,7 @@
 			{ "name": "Svelte", "urlRef": "svelte" },
 			{ "name": "NextJs", "urlRef": "nextjs" },
 			{ "name": "React", "urlRef": "react" },
-			{ "name": "Bootstrap", "urlRef": "bootstrap" },
-			{ "name": "TailwindCSS", "urlRef": "tailwindcss" },
-			{ "name": "CSS", "urlRef": "css" },
-			{ "name": "HTML", "urlRef": "html" }
+			{ "name": "TailwindCSS", "urlRef": "tailwindcss" }
 		]
 	},
 	{
@@ -18,10 +15,8 @@
 			{ "name": "MySQL", "urlRef": "mysql" },
 			{ "name": "PostgreSQL", "urlRef": "postgresql" },
 			{ "name": "ExpressJs", "urlRef": "expressjs" },
-			{ "name": "ElysiaJs", "urlRef": "elysia" },
 			{ "name": "Bun", "urlRef": "bun" },
-			{ "name": "NodeJs", "urlRef": "nodejs" },
-			{ "name": "Laravel", "urlRef": "laravel" }
+			{ "name": "NodeJs", "urlRef": "nodejs" }
 		]
 	},
 	{
@@ -29,22 +24,15 @@
 		"techs": [
 			{ "name": "TypeScript", "urlRef": "typescript" },
 			{ "name": "JavaScript", "urlRef": "javascript" },
-			{ "name": "Go", "urlRef": "go" },
-			{ "name": "Rust", "urlRef": "rust" },
-			{ "name": "Python", "urlRef": "python" },
-			{ "name": "PHP", "urlRef": "php" },
-			{ "name": "MarkDown", "urlRef": "markdown" }
+			{ "name": "Rust", "urlRef": "rust" }
 		]
 	},
 	{
 		"name": "Tools",
 		"techs": [
 			{ "name": "Linux", "urlRef": "linux" },
-			{ "name": "Bash", "urlRef": "bash" },
 			{ "name": "Git", "urlRef": "git" },
-			{ "name": "GitHub", "urlRef": "github" },
-			{ "name": "NPM", "urlRef": "npm" },
-			{ "name": "Neovim", "urlRef": "neovim" }
+			{ "name": "GitHub", "urlRef": "github" }
 		]
 	}
 ]
