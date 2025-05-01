@@ -1,3 +1,3 @@
-Simple website based on a Vercel Template and adjusted to be work on SvelteKit 5.
+Simple website based on a template from Astro themes.
 
-This website and all it's contents is under the Unlicensed.
+This website and all it's contents is under the unlicensed.
