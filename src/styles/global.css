@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap');
 @import "tailwindcss";
 @import "./typography.css" layer(components);
 @variant dark (&:where(.dark, .dark *));
@@ -31,6 +32,7 @@
   --color-dark-bg: #1d1d1d;
   --color-dark-link: #e15b73;
   --color-dark-muted-text: #fff4ed;
+  --font-mono: 'IBM Plex Mono';
 }
 
 /* ensure .link and typography.css are consistent */

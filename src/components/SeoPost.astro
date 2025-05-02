@@ -7,7 +7,7 @@ const post = entry as CollectionEntry<"blog">;
 
 const postTitle = post.data.title || SITE.title;
 const postDescription = post.data.description || SITE.description;
-const ogImage = new URL("./og.jpg", Astro.site);
+const ogImage = new URL("./favicon.jpg", Astro.site);
 ---
 
 <title>{`${postTitle} | ${SITE.title}`}</title>
