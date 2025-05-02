@@ -30,4 +30,4 @@ Now that I feel satisfied with a platform that will likely scale, the roadmap fo
 - Making my own server to host a NAS.
 - Host a Gitea server and mirror it to github.
 
-Updated anytime soon! u.u
+Updates anytime soon! u.u
