@@ -1,5 +1,5 @@
 ---
 title: lbel-web
 description: My personal website
-href: https://srlbel.is-a.dev
+href: https://github.com/srlbel/lebel-web
 ---
