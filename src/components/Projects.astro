@@ -16,7 +16,7 @@ const projects = await getCollection("projects");
         <ExternalLink href={project.data.href}>
           {project.data.title}
         </ExternalLink>
-        <p class="ditalic prose ">{project.data.description}</p>
+        <p class="italic prose">{project.data.description}</p>
         </div>
       ))
     }
