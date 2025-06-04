@@ -12,9 +12,12 @@ const projects = await getCollection("projects");
   <div class="grid list-none gap-4 p-0">
     {
       projects.map((project) => (
+        <div>
         <ExternalLink href={project.data.href}>
           {project.data.title}
         </ExternalLink>
+        <p class="text-sm italic prose ">{project.data.description}</p>
+        </div>
       ))
     }
   </div>
