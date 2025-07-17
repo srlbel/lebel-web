@@ -7,7 +7,7 @@ import type {
 export const SITE: SiteConfiguration = {
   title: "lbel's shrine",
   description:
-    "A barebones starter theme. Built with Astro, Tailwind CSS, and Markdown.",
+    "A simple web based on Astro to share my blog and projects",
   href: "https://srlbel.is-a.dev",
   author: "srlbel",
   locale: "en-US",
