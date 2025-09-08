@@ -7,11 +7,7 @@ console.log(photoBlobs);
 ---
 
 <section class="py-3">
-  <h2 class="text-muted-text dark:text-dark-muted-text mb-3 text-lg font-bold">
-    the world through my lenses...
-  </h2>
-  <p>This is currently empty...</p>
   <div class="grid list-none gap-4 p-0">
-    {photos.map((photo) => <img src={photo} />)}
+    {photos.map((photo) => <img src={photo} loading="lazy" />)}
   </div>
 </section>
