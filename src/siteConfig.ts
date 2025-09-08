@@ -6,8 +6,7 @@ import type {
 
 export const SITE: SiteConfiguration = {
   title: "lbel's shrine",
-  description:
-    "A simple web based on Astro to share my blog and projects",
+  description: "A simple web based on Astro to share my blog and projects",
   href: "https://srlbel.is-a.dev",
   author: "srlbel",
   locale: "en-US",
@@ -21,6 +20,10 @@ export const NAV_LINKS: NavigationLinks = {
   projects: {
     path: "/projects",
     label: "projects",
+  },
+  photography: {
+    path: "/photography",
+    label: "photography",
   },
 };
 
