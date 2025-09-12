@@ -1,6 +1,10 @@
+---
+import "@/styles/global.css";
+const images = ["/photos/1.jpg", "/photos/2.jpg"];
+---
+
 <section class="py-3">
   <div class="grid list-none gap-4 p-0">
-      <img src="/photos/1.jpg" loading="lazy" />
-      <img src="/photos/2.jpg" loading="lazy" />
+    {images.map((image) => <img src={image} class="grain" />)}
   </div>
 </section>
