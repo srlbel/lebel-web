@@ -1,0 +1,23 @@
+---
+import { getCollection } from "astro:content";
+
+const lists = await getCollection("reading_list");
+---
+
+<section class="py-3">
+  <h2 class="text-muted-text dark:text-dark-muted-text mb-3 text-lg font-bold">
+    My current reading/watching list
+  </h2>
+  <div class="grid list-none gap-4 p-0">
+    {
+      lists.map((list) => (
+        <li>
+          <span class="font-bold">{list.data.title}</span>
+          <p class="prose italic">
+            {list.data.author} - {list.data.year} - {list.data.type}
+          </p>
+        </li>
+      ))
+    }
+  </div>
+</section>
