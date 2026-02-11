@@ -1,9 +1,14 @@
 ---
 import "@/styles/global.css";
-const images = ["/photos/1.jpg", "/photos/2.jpg"];
+const images = ["/photos/2.jpg"];
 ---
 
 <section class="py-3">
+  <div class="py-3">
+    I'm not a professional, but I enjoy taking photos of landscapes when I go
+    out to the countryside.
+  </div>
+
   <div class="grid list-none gap-4 p-0">
     {images.map((image) => <img src={image} class="grain" />)}
   </div>
