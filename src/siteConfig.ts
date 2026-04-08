@@ -5,7 +5,7 @@ import type {
 } from "@/types.ts";
 
 export const SITE: SiteConfiguration = {
-  title: "lbel's shrine",
+  title: "lbel site",
   description: "A simple web based on Astro to share my blog and projects",
   href: "https://srlbel.is-a.dev",
   author: "srlbel",
@@ -35,9 +35,5 @@ export const SOCIAL_LINKS: SocialLinks = {
   github: {
     label: "github",
     href: "https://github.com/srlbel",
-  },
-  twitter: {
-    label: "x",
-    href: "https://twitter.com/srlbel",
   },
 };
