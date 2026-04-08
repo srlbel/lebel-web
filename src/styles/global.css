@@ -27,13 +27,14 @@
 }
 
 @theme {
-  --color-bg: #fff4ed;
-  --color-link: #e15b73;
-  --color-muted-text: #1d1d1d;
+  --color-bg: #eff1f5;
+  --color-link: #df8e1d;
+  --color-muted-text: #4c4f69;
 
-  --color-dark-bg: #1d1d1d;
-  --color-dark-link: #e15b73;
-  --color-dark-muted-text: #fff4ed;
+  --color-dark-bg: #1e1e2e;
+  --color-dark-link: #f9e2af;
+  --color-dark-muted-text: #cdd6f4;
+
   --font-mono: 'IBM Plex Mono';
 }
 
@@ -73,4 +74,10 @@
     pointer-events: none;
     mix-blend-mode: overlay;
   }
+}
+
+html.dark .astro-code,
+html.dark .astro-code span {
+  color: var(--shiki-dark) !important;
+  background-color: var(--shiki-dark-bg) !important;
 }

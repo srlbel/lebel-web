@@ -7,7 +7,10 @@ export default defineConfig({
   integrations: [sitemap()],
   markdown: {
     shikiConfig: {
-      theme: "gruvbox-dark-hard",
+      themes: {
+        dark: "catppuccin-mocha",
+        light: "catppuccin-latte"
+      }
     },
   },
   site: "https://srlbel.is-a.dev",
