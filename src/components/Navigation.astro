@@ -7,19 +7,22 @@ const currentPath = Astro.url.pathname;
 <header
   class="mx-auto flex max-w-screen-sm flex-wrap items-center justify-between p-3 pb-8 font-mono sm:p-6"
 >
-  <a href="/" class="text-lg font-bold sm:text-xl">{SITE.title}</a>
+  <a href="/" class="text-ink dark:text-dark-ink text-lg font-bold sm:text-xl"
+    >{SITE.title}</a
+  >
   <nav>
     <ul class="flex list-none items-center gap-2 p-0 sm:gap-3">
       {
         Object.keys(NAV_LINKS).map((navItemKey) => {
-          const { path, label } = NAV_LINKS[navItemKey];
-          const isActive = currentPath === path || currentPath.startsWith(path + '/');
+          const { path } = NAV_LINKS[navItemKey];
+          const isActive =
+            currentPath === path || currentPath.startsWith(path + "/");
 
           return (
             <li>
               <a
                 href={NAV_LINKS[navItemKey].path}
-                class={`prose hover:text-link ${isActive ? "font-bold" : ""}`}
+                class={`hover:text-accent text-ink dark:text-dark-ink ${isActive ? "font-bold" : ""}`}
               >
                 {NAV_LINKS[navItemKey].label}
               </a>

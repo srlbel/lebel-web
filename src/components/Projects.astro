@@ -6,17 +6,15 @@ const projects = await getCollection("projects");
 ---
 
 <section class="py-3">
-  <h2 class="text-muted-text dark:text-dark-muted-text mb-3 text-lg font-bold">
-    Projects
-  </h2>
+  <h2 class="text-ink dark:text-dark-ink mb-3 text-lg font-bold">Projects</h2>
   <div class="grid list-none gap-4 p-0">
     {
       projects.map((project) => (
         <div>
-        <ExternalLink href={project.data.href}>
-          {project.data.title}
-        </ExternalLink>
-        <p class="italic prose">{project.data.description}</p>
+          <ExternalLink href={project.data.href}>
+            {project.data.title}
+          </ExternalLink>
+          <p class="prose italic">{project.data.description}</p>
         </div>
       ))
     }

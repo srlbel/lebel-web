@@ -28,20 +28,24 @@
 
 @theme {
   --color-bg: #eff1f5;
-  --color-link: #df8e1d;
-  --color-muted-text: #4c4f69;
+  --color-ink: #4c4f69;
+  --color-ink-muted: #6c6f85;
+  --color-surface: #ccd0da;
+  --color-accent: #df8e1d;
 
   --color-dark-bg: #1e1e2e;
-  --color-dark-link: #f9e2af;
-  --color-dark-muted-text: #cdd6f4;
+  --color-dark-ink: #cdd6f4;
+  --color-dark-ink-muted: #a6adc8;
+  --color-dark-surface: #313244;
+  --color-dark-accent: #f9e2af;
 
   --font-mono: 'IBM Plex Mono';
 }
 
 /* ensure .link and typography.css are consistent */
 .link {
-  --prose-link-color: var(--color-link);
-  --prose-link-underline-color: var(--color-link);
+  --prose-link-color: var(--color-accent);
+  --prose-link-underline-color: var(--color-accent);
 
   color: var(--prose-link-color);
   font-weight: var(--font-weight-semibold);
@@ -56,8 +60,8 @@
 }
 
 .dark .link {
-  --prose-link-color: var(--color-dark-link);
-  --prose-link-underline-color: var(--color-dark-link);
+  --prose-link-color: var(--color-dark-accent);
+  --prose-link-underline-color: var(--color-dark-accent);
 }
 
 html.dark .astro-code,

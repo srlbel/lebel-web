@@ -1,9 +1,9 @@
 .prose {
-  --prose-color: var(--color-neutral-700);
-  --prose-heading-color: var(--color-neutral-950);
-  --prose-strong-color: var(--color-neutral-950);
-  --prose-link-color: var(--color-link);
-  --prose-code-color: var(--color-neutral-950);
+  --prose-color: var(--color-ink-muted);
+  --prose-heading-color: var(--color-ink);
+  --prose-strong-color: var(--color-ink);
+  --prose-link-color: var(--color-accent);
+  --prose-code-color: var(--color-accent);
   --prose-marker-color: color-mix(
     in oklab,
     var(--color-neutral-700) 25%,
