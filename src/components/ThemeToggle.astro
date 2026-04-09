@@ -4,7 +4,7 @@ import { Moon, Sun, SunMoon } from "@lucide/astro";
 
 <div
   id="theme-toggle"
-  class="relative z-0 inline-grid grid-cols-3 gap-0.5 bg-neutral-950/5 p-0.75 text-neutral-950 dark:bg-white/10 dark:text-white"
+  class="bg-surface text-ink dark:bg-dark-surface dark:text-dark-ink relative z-0 inline-grid grid-cols-3 gap-0.5 p-0.75"
 >
   <button
     aria-label="System theme"
@@ -33,12 +33,12 @@ import { Moon, Sun, SunMoon } from "@lucide/astro";
 
 <style>
   .theme-button.active {
-    background-color: white;
+    background-color: var(--color-bg);
     outline: 1px solid;
   }
 
   :global(.dark) .theme-button.active {
-    background-color: var(--active-bg-dark, black);
+    background-color: var(--color-dark-bg);
     outline: 1px solid;
   }
 </style>
