@@ -22,7 +22,7 @@ const currentPath = Astro.url.pathname;
             <li>
               <a
                 href={NAV_LINKS[navItemKey].path}
-                class={`hover:text-accent text-ink dark:text-dark-ink ${isActive ? "font-bold" : ""}`}
+                class={`hover:text-accent dark:hover:text-dark-accent text-ink dark:text-dark-ink ${isActive ? "font-bold" : ""}`}
               >
                 {NAV_LINKS[navItemKey].label}
               </a>
