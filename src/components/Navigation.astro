@@ -4,14 +4,17 @@ import { NAV_LINKS, SITE } from "@/siteConfig.ts";
 const currentPath = Astro.url.pathname;
 ---
 
-<header
-  class="mx-auto flex max-w-screen-sm flex-wrap items-center justify-between p-3 pb-8 font-mono sm:p-6"
+<section
+  class="mx-auto flex max-w-5xl flex-col justify-between p-3 font-mono sm:p-6"
 >
-  <a href="/" class="text-ink dark:text-dark-ink text-lg font-bold sm:text-xl"
-    >{SITE.title}</a
+  <a
+    href="/"
+    class="text-ink dark:text-dark-ink text-2xl font-bold sm:text-3xl"
   >
+    {SITE.title}
+  </a>
   <nav>
-    <ul class="flex list-none items-center gap-2 p-0 sm:gap-3">
+    <ul class="flex list-none items-center gap-2 py-1 sm:gap-3">
       {
         Object.keys(NAV_LINKS).map((navItemKey) => {
           const { path } = NAV_LINKS[navItemKey];
@@ -22,7 +25,7 @@ const currentPath = Astro.url.pathname;
             <li>
               <a
                 href={NAV_LINKS[navItemKey].path}
-                class={`hover:text-accent dark:hover:text-dark-accent text-ink dark:text-dark-ink ${isActive ? "font-bold" : ""}`}
+                class={`hover:text-accent dark:hover:text-dark-accent text-ink dark:text-dark-ink text-lg sm:text-xl ${isActive ? "font-bold" : ""}`}
               >
                 {NAV_LINKS[navItemKey].label}
               </a>
@@ -32,4 +35,4 @@ const currentPath = Astro.url.pathname;
       }
     </ul>
   </nav>
-</header>
+</section>
