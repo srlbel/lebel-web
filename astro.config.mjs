@@ -8,8 +8,8 @@ export default defineConfig({
     markdown: {
         shikiConfig: {
             themes: {
-                dark: 'catppuccin-mocha',
-                light: 'catppuccin-latte',
+                dark: 'rose-pine',
+                light: 'rose-pine-dawn',
             },
         },
     },
