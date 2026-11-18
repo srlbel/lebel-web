@@ -1,49 +1,48 @@
-import { defineCollection } from "astro:content";
-import { z } from "astro/zod"
-import { glob } from "astro/loaders";
+import { glob } from 'astro/loaders';
+import { z } from 'astro/zod';
+import { defineCollection } from 'astro:content';
 
 const blog = defineCollection({
-  loader: glob({ pattern: "**/[^_]*.{md,mdx}", base: "./src/content/blog" }),
-  schema: ({ image }) =>
-    z.object({
-      title: z.string(),
-      description: z.string(),
-      publicationDate: z.date(),
-      image: image().optional(),
-      imageAlt: z.string().optional(),
-      published: z.boolean(),
-      tags: z.array(z.string()).optional(),
-    }),
+    loader: glob({ pattern: '**/[^_]*.{md,mdx}', base: './src/content/blog' }),
+    schema: ({ image }) =>
+        z.object({
+            title: z.string(),
+            description: z.string(),
+            publicationDate: z.date(),
+            image: image().optional(),
+            imageAlt: z.string().optional(),
+            published: z.boolean(),
+            tags: z.array(z.string()).optional(),
+        }),
 });
 
 const projects = defineCollection({
-  loader: glob({
-    pattern: "**/[^_]*.{md,mdx}",
-    base: "./src/content/projects",
-  }),
-  schema: () =>
-    z.object({
-      title: z.string(),
-      description: z.string(),
-      publicationDate: z.date().optional(),
-      href: z.string(),
-      tags: z.array(z.string())
+    loader: glob({
+        pattern: '**/[^_]*.{md,mdx}',
+        base: './src/content/projects',
     }),
+    schema: () =>
+        z.object({
+            title: z.string(),
+            description: z.string(),
+            publicationDate: z.date().optional(),
+            href: z.string(),
+            tags: z.array(z.string()),
+        }),
 });
 
-
 const reading_list = defineCollection({
-  loader: glob({
-    pattern: "**/[^_]*.{md,mdx}",
-    base: "./src/content/reading",
-  }),
-  schema: () =>
-    z.object({
-      title: z.string(),
-      author: z.string(),
-      year: z.number(),
-      type: z.enum(["Book", "TV", "Movie"])
+    loader: glob({
+        pattern: '**/[^_]*.{md,mdx}',
+        base: './src/content/reading',
     }),
+    schema: () =>
+        z.object({
+            title: z.string(),
+            author: z.string(),
+            year: z.number(),
+            type: z.enum(['Book', 'TV', 'Movie']),
+        }),
 });
 
 export const collections = { blog, projects, reading_list };

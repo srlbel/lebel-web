@@ -1,71 +1,71 @@
-@import "tailwindcss";
-@import "./typography.css" layer(components);
+@import 'tailwindcss';
+@import './typography.css' layer(components);
 @variant dark (&:where(.dark, .dark *));
 
 :root {
-  color-scheme: light dark;
+    color-scheme: light dark;
 }
 
 .dark {
-  color-scheme: dark;
+    color-scheme: dark;
 }
 
 .light {
-  color-scheme: light;
+    color-scheme: light;
 }
 
 @variant dark {
-  &:where(.dark, .dark *) {
-    @slot;
-  }
-
-  @media (prefers-color-scheme: dark) {
-    &:where(.system, .system *) {
-      @slot;
+    &:where(.dark, .dark *) {
+        @slot;
     }
-  }
+
+    @media (prefers-color-scheme: dark) {
+        &:where(.system, .system *) {
+            @slot;
+        }
+    }
 }
 
 @theme {
-  --color-bg: #eff1f5;
-  --color-ink: #4c4f69;
-  --color-ink-muted: #6c6f85;
-  --color-surface: #ccd0da;
-  --color-accent: #df8e1d;
+    --color-bg: #eff1f5;
+    --color-ink: #4c4f69;
+    --color-ink-muted: #6c6f85;
+    --color-surface: #ccd0da;
+    --color-accent: #df8e1d;
 
-  --color-dark-bg: #1e1e2e;
-  --color-dark-ink: #cdd6f4;
-  --color-dark-ink-muted: #a6adc8;
-  --color-dark-surface: #313244;
-  --color-dark-accent: #f9e2af;
+    --color-dark-bg: #1e1e2e;
+    --color-dark-ink: #cdd6f4;
+    --color-dark-ink-muted: #a6adc8;
+    --color-dark-surface: #313244;
+    --color-dark-accent: #f9e2af;
 
-  --font-mono: 'IBM Plex Mono';
+    --font-mono: 'IBM Plex Mono';
 }
 
 /* ensure .link and typography.css are consistent */
 .link {
-  --prose-link-color: var(--color-accent);
-  --prose-link-underline-color: var(--color-accent);
+    --prose-link-color: var(--color-accent);
+    --prose-link-underline-color: var(--color-accent);
 
-  color: var(--prose-link-color);
-  font-weight: var(--font-weight-semibold);
-  text-decoration: underline;
-  text-underline-offset: 3px;
-  text-decoration-color: var(--prose-link-underline-color);
-  text-decoration-thickness: 1px;
-
-  & code {
+    color: var(--prose-link-color);
     font-weight: var(--font-weight-semibold);
-  }
+    text-decoration: underline;
+    text-underline-offset: 3px;
+    text-decoration-color: var(--prose-link-underline-color);
+    text-decoration-thickness: 1px;
+
+    & code {
+        font-weight: var(--font-weight-semibold);
+    }
 }
 
 .dark .link {
-  --prose-link-color: var(--color-dark-accent);
-  --prose-link-underline-color: var(--color-dark-accent);
+    --prose-link-color: var(--color-dark-accent);
+    --prose-link-underline-color: var(--color-dark-accent);
 }
 
 html.dark .astro-code,
 html.dark .astro-code span {
-  color: var(--shiki-dark) !important;
-  background-color: var(--shiki-dark-bg) !important;
+    color: var(--shiki-dark) !important;
+    background-color: var(--shiki-dark-bg) !important;
 }
