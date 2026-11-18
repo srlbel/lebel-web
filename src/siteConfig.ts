@@ -21,10 +21,6 @@ export const NAV_LINKS: NavigationLinks = {
         path: '/projects',
         label: 'projects',
     },
-    photography: {
-        path: '/photography',
-        label: 'photography',
-    },
 };
 
 export const SOCIAL_LINKS: SocialLinks = {
@@ -36,4 +32,8 @@ export const SOCIAL_LINKS: SocialLinks = {
         label: 'github',
         href: 'https://github.com/srlbel',
     },
+    x: {
+        label: 'x (formely \'twitter\')',
+        href: "https://x.com/srlbel"
+    }
 };

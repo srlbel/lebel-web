@@ -1,3 +1,14 @@
+---
+interface Props {
+    scene?:
+        | 'kyoto-dusk'
+        | 'jungle-falls' 
+        | 'misty-forest';
+}
+
+const { scene = 'kyoto-dusk' } = Astro.props;
+---
+
 <script type="module" src="https://ascii.rest/ascii.js"></script>
 
-<ascii-art piece="kyoto-dusk"></ascii-art>
+<ascii-art piece={scene}></ascii-art>
