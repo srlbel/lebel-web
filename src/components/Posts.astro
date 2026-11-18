@@ -11,10 +11,10 @@ const posts = (await getCollection("blog"))
 ---
 
 <section class="py-3">
-  <h2 class="text-ink dark:text-dark-ink mb-3 text-2xl font-bold">
+  <h2 class="text-ink dark:text-dark-ink mb-4 text-2xl font-bold">
     Blog posts
   </h2>
-  <div class="grid list-none gap-1 p-0">
+  <div class="grid list-none gap-1 px-6">
     {posts.map((post) => <Post post={post} />)}
   </div>
 </section>

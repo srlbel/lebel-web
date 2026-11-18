@@ -1,29 +1,15 @@
 ---
 import { getCollection } from "astro:content";
-import ExternalLink from "@/components/ExternalLink.astro";
+import Project from './Project.astro'
 
 const projects = await getCollection("projects");
 ---
 
 <section class="py-3">
   <h2 class="text-ink dark:text-dark-ink mb-3 text-2xl font-bold">Projects</h2>
-  <div class="grid list-none gap-5 p-0 md:grid-cols-2">
+  <div class="grid list-none gap-5 px-6 md:grid-cols-2">
     {
-      projects.map((project) => (
-        <div class="flex w-full flex-col gap-0 p-2">
-          <ExternalLink href={project.data.href}>
-            {project.data.title}
-          </ExternalLink>
-          <p>{project.data.description}</p>
-          <div class="flex flex-row gap-2">
-            {project.data.tags.map((tag) => (
-              <p class="text-ink-muted dark:text-dark-ink-muted italic">
-                {tag};
-              </p>
-            ))}
-          </div>
-        </div>
-      ))
+      projects.map((project) => <Project project={project} />)
     }
   </div>
 </section>

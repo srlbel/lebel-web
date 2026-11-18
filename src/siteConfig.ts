@@ -33,7 +33,7 @@ export const SOCIAL_LINKS: SocialLinks = {
         href: 'https://github.com/srlbel',
     },
     x: {
-        label: 'x (formely \'twitter\')',
-        href: "https://x.com/srlbel"
-    }
+        label: "x (formely 'twitter')",
+        href: 'https://x.com/srlbel',
+    },
 };
