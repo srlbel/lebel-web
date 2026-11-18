@@ -5,7 +5,7 @@ import type {
 } from '@/types.ts';
 
 export const SITE: SiteConfiguration = {
-    title: 'lbel site',
+    title: 'srlbel site',
     description: 'A simple web based on Astro to share my blog and projects',
     href: 'https://lebelito.cc',
     author: 'srlbel',
