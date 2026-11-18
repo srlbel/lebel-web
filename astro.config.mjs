@@ -13,7 +13,7 @@ export default defineConfig({
             },
         },
     },
-    site: 'https://srlbel.is-a.dev',
+    site: 'https://lebelito.cc',
     vite: {
         plugins: [tailwindcss()],
     },

@@ -19,3 +19,5 @@ export function formatDate(
 
     return new Intl.DateTimeFormat(locale, formatOptions).format(date);
 }
+
+export type DateOptions = NonNullable<Parameters<typeof formatDate>[1]>;

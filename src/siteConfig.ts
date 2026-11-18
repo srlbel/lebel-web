@@ -7,7 +7,7 @@ import type {
 export const SITE: SiteConfiguration = {
     title: 'lbel site',
     description: 'A simple web based on Astro to share my blog and projects',
-    href: 'https://srlbel.is-a.dev',
+    href: 'https://lebelito.cc',
     author: 'srlbel',
     locale: 'en-US',
 };
