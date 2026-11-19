@@ -7,7 +7,7 @@ const projects = await getCollection("projects");
 
 <section class="py-3">
   <h2 class="text-ink dark:text-dark-ink mb-3 text-2xl font-bold">Projects</h2>
-  <div class="grid list-none gap-5 px-6 md:grid-cols-2">
+  <div class="grid list-none gap-5 md:grid-cols-2">
     {
       projects.map((project) => <Project project={project} />)
     }

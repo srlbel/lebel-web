@@ -14,7 +14,7 @@ const posts = (await getCollection("blog"))
   <h2 class="text-ink dark:text-dark-ink mb-4 text-2xl font-bold">
     Blog posts
   </h2>
-  <div class="grid list-none gap-1 px-6">
+  <div class="grid list-none gap-1">
     {posts.map((post) => <Post post={post} />)}
   </div>
 </section>
